@@ -1,9 +1,21 @@
+/* Variables */
+
+:root{
+
+    --blue: #3882F6;
+    --darkBlue: #1F2937;
+    --quoteBackground: #E5E7EB;
+
+}
+
 /* Reset */
 
 * {
     box-sizing: border-box;
     list-style: none;
 }
+
+
 
 /* All purpose*/
 
@@ -24,14 +36,28 @@ header .container{
 
 header ul {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 
 /* Hero */
+.hero_container, header, footer{
+    background-color: var(--darkBlue);
+    color: white;
+}   
 
 .hero_container .container {
     display: flex;
+    
+}
+
+.hero_container .container .image_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 620px;
+    height: 180px;
+    background-color: gray;
 }
 
 /* Cards */
@@ -46,12 +72,36 @@ header ul {
     justify-content: space-between;
 }
 
+.card{
+    text-align: center;
+}
+
+.card_image{
+    /* border-style: 2px solid rgb(233, 52, 52); */
+    border: 5px solid var(--blue);
+    border-radius: 1rem;
+    
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Quote */
 
 /* this will need an after element*/
 .quote_container {
 
     text-align: center;
+    background-color: var(--quoteBackground);
+}
+
+.quote_container p {
+    font-size: 2rem;
+    font-style: italic;
+    color: #1F2937;
 }
 
 /* Sign up card*/
